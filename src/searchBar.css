@@ -1,6 +1,10 @@
 #search_bar{
     color: black;
     display: flex;
+}
+
+.input_new_note{
+    display: flex;
     flex-direction: column;
 }
 
@@ -15,11 +19,15 @@ height: 100px;
 #search_bar input{
     border:none;
     border-radius: 5px;
-    margin-bottom:10px;
+}
+
+input[placeholder='Title']{
+margin-bottom: 10px;
 }
 
 #search_bar button{
     border:none;
     border-radius: 5px;
+    margin-left: 15px;
     padding: 15px;
 }

@@ -8,7 +8,12 @@ function Note({name,del,id_note,content}){
                 <p>{content}</p>
             </div>
             <div className='buttons'>
-            <button id={id_note}onClick={del}>del</button>
+                <button id={id_note}onClick={del}>del</button>
+                <select>
+                    <option>Studeren</option>
+                    <option>Thuis</option>
+                    <option>Relatie</option>
+                </select>
             </div>
         </div>
     );

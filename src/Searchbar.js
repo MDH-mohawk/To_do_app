@@ -6,8 +6,10 @@ function SearchBar({add,change_note,current_note,change_note_content,current_not
 
     return(
         <div id='search_bar'>
+            <div className='input_new_note'>      
             <input type='text' placeholder="Title" onChange={change_note} value={current_note}></input>
             <input  className='content' type='text' placeholder="Content" onChange={change_note_content} value={current_note_content}></input>
+            </div>
             <button onClick={add}>+</button>
 
         </div>
