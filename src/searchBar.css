@@ -1,0 +1,9 @@
+#search_bar{
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+height: 100px;
+}
