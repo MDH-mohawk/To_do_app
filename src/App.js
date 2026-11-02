@@ -1,10 +1,9 @@
 import './App.css';
 import NoteView from './NoteView';
 import SearchBar from './Searchbar';
-import { useState,useRef, useEffect, use } from 'react';
+import { useState, useEffect } from 'react';
 import { addNote,deleteNote } from './NoteReducer';
 import store from './store';
-import noteReducer from './NoteReducer';
 
 function App() {
 
@@ -14,7 +13,7 @@ function App() {
 //Input note content
   const [noteContent,setNoteContent] = useState('');
 // ID counter
-  const [arrId,setArrId] = useState(0);
+  const [arrId,setArrId] = useState(1);
 
 //Array state
 const [arr,setArr] = useState([]);
@@ -50,9 +49,9 @@ useEffect(()=>{
 
 //Notitie verwijderen
 function del_note(e){
-  setArr(arr.filter(item => item.id != e.target.parentElement.id))
-  console.log(e.target.parentElement.id)
-  //store.dispatch(deleteNote())
+  setArr(arr.filter(item => item.id !== e.target.parentElement.id))
+  console.log(e.target.id)
+  store.dispatch(deleteNote(e.target.id))
 }
 
 

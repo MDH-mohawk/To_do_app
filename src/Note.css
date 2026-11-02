@@ -3,25 +3,54 @@
     color: black;
     padding: 30px;
     border-radius: 20px;
-    border: solid 5px orange;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    animation: loadanim 1s ease-out forwards;
+    justify-content: space-between;
+    width: 300px;
 }
 
-.note_card p {
-    padding: 5px;
+.Note_content h1{
+    padding: 10px;
+    margin:0px;
+    font-size:35px;
+}
+
+.Note_content p {
+    padding: 10px;
+    margin:0px;
     display: flex;
     align-items: center;
     text-align: center;
+    font-size:15px
 }
 
 .note_card button{
+    padding: 10px;
+    margin: 10px;
     height: 30px;
-    width: 40px;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     text-align:center;
+}
+
+.note_card .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes loadanim{
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1 ;
+        transform: translateX(0);
+    }
 }

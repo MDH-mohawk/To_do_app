@@ -7,7 +7,9 @@ function Note({name,del,id_note,content}){
                 <h1>{name}</h1>
                 <p>{content}</p>
             </div>
-            <button onClick={del}>del</button>
+            <div className='buttons'>
+            <button id={id_note}onClick={del}>del</button>
+            </div>
         </div>
     );
 }
