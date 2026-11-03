@@ -1,5 +1,5 @@
 import Note from './Note';
-import './NoteView.css'
+import '../Styling/NoteView.css'
 
 function NoteView({arr,del_butt}) {
 

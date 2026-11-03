@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './searchBar.css'
+import '../Styling/searchBar.css'
 
 
 function SearchBar({add,change_note,current_note,change_note_content,current_note_content}){

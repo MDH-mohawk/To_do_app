@@ -1,9 +1,10 @@
-import './App.css';
+import '../Styling/App.css';
 import NoteView from './NoteView';
 import SearchBar from './Searchbar';
 import { useState, useEffect } from 'react';
-import { addNote,deleteNote } from './NoteReducer';
-import store from './store';
+import { addNote,deleteNote } from '../Redux/NoteReducer';
+import store from '../Redux/store';
+import Navbar from './Navbar';
 
 function App() {
 
@@ -58,9 +59,7 @@ function del_note(e){
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Note taker
-        </p>
+        <Navbar/>
         <SearchBar add={add_note} change_note={change_note} current_note={note} current_note_content={noteContent} change_note_content={change_note_content}/>
         <NoteView arr={notes} del_butt={del_note}/>
       </header>

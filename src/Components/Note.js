@@ -1,4 +1,4 @@
-import './Note.css'
+import '../Styling/Note.css';
 
 function Note({name,del,id_note,content}){
     return(
