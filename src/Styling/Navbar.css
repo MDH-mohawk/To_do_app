@@ -1,11 +1,21 @@
-
-.nav ul{
+.nav{
+    margin: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav li{
-    list-style-type: none;
-    font-size: 25px;
-    padding-right: 5px;
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    border: 10px solid black;
+    background-color: darkorange;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav a:hover{
+    color: orange;
 }

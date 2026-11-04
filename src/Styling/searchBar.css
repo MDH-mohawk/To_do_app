@@ -1,6 +1,7 @@
 #search_bar{
     color: black;
     display: flex;
+    justify-content: center;
 }
 
 .input_new_note{
